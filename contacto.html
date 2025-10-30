@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Restaurante Rachel's – Formulario</title>
+
+<style>
+body{
+    font-family:'Playfair Display', serif;
+    background-color: #ffaaaa;
+    color:#333;
+    line-height:1.6;
+    margin: 0px;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    background-color: #AA3939;
+    padding: 5px 0;
+    margin: 0px;
+    text-align: center;
+}
+header h1{
+    color: white;
+    margin-left: center;
+    font-size: 35px;
+}
+.logo{ 
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+    padding: 10px;
+}
+nav ul li{
+    display: inline;
+    margin: 15px;
+    color: white;
+}
+nav a:hover,
+nav a:focus{    
+    color: #ffaaaa;
+}
+nav a.active {  
+    color: #550000;
+}
+
+section{
+    margin: 0px 20px;
+    text-align: center;
+    font-size: 25px;
+
+}
+/* Formulario */
+.form-wrapper{
+    max-width:400px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+label{ display:block; margin-bottom:.3rem; font-weight:bold;}
+input[type="text"],
+input[type="email"],
+textarea{
+    width:100%;
+    padding:.5rem;
+    border:1px solid #ccc;
+    border-radius:4px;
+    margin-bottom:15px;
+}
+button{
+    background:#27ae60;
+    color:white;
+    border:none;
+    padding:.6rem 1.2rem;
+    border-radius:4px;
+    cursor:pointer;
+}
+button:hover{ background:#219150; }
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- Logo -->
+    <img src="logo/restaurante_rachels_64px_X_64px.png" alt="Logo del Restaurante Rachel's" class="logo">
+
+    <!-- Título página -->
+    <h1>RESTAURANTE RACHEL'S</h1>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<section>
+    <h2>¡Cuéntanos lo que necesitas!</h2>
+    <p>¿Tienes alguna pregunta sobre el menú, requerimientos especiales, reservas o eventos privados, o simplemente quieres compartir tus sugerencias? Rellena este formulario con lo que necesites y nuestro equipo se pondrá en contacto contigo a la brevedad para asegurarnos de que tu experiencia sea perfecta.</p>
+</section>  
+<div class="form-wrapper">
+    <h2>Envíanos tu mensaje</h2>
+    <form action="#" method="POST" novalidate>
+        <label for="name">Nombre *</label>
+        <input type="text" id="name" name="name" required placeholder="Ej. Juan Pérez">
+
+        <label for="email">Correo electrónico *</label>
+        <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4" placeholder="Escribe tu comentario..."></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+</body>
+</html>
