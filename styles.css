@@ -1,9 +1,5 @@
-* {
-  box-sizing: border-box;
-}
-
 body{
-    border: 0px 16px 0px 16px;
+    border: 0px 16px;
     margin: 0;
     padding: 0;
     font-family: 'Playfair Display', serif;
@@ -20,7 +16,7 @@ header{
 
 header h1{
     color: white;
-    margin-left: center;
+
     font-size: 35px;
 
 }
@@ -36,7 +32,7 @@ nav a:focus{
 div{
     text-align: center;
     margin-bottom: 20px;
-    margin-top: opx;
+    margin-top: 0px;
 }
 img{
     width: 100%;
@@ -93,6 +89,7 @@ div{
 .portada-nosotros{
     width: 25%;
     height: auto;
+    margin-top: 20px;
 }
 .nosotros{
     display: flex;
