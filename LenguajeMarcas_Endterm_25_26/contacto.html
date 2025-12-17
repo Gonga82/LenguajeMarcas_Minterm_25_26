@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Restaurante Rachel's – Formulario</title>
+
+<style>
+body{
+    font-family:'Playfair Display', serif;
+    background-color: #ffaaaa;
+    color:#333;
+    line-height:1.6;
+    margin: 0px;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    background-color: #AA3939;
+    padding: 5px 0;
+    margin: 0px;
+    text-align: center;
+}
+header h1{
+    color: white;
+    font-size: 35px;
+}
+.logo{ 
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+    padding: 10px;
+}
+nav ul li{
+    display: inline;
+    margin: 15px;
+    color: white;
+}
+nav a:hover,
+nav a:focus{    
+    color: #ffaaaa;
+}
+nav a.active {  
+    color: #550000;
+}
+
+section{
+    margin: 0px 20px;
+    text-align: center;
+    font-size: 25px;
+
+}
+/* Formulario */
+.form-wrapper{
+    max-width: 500px;       
+    margin: 40px auto;      
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+    border: 1px solid #AA3939;
+}
+label{ 
+    display:block; 
+    margin-bottom:.4rem; 
+    font-weight:bold;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    display: block;
+    width: 100%;            
+    box-sizing: border-box; 
+    padding: .6rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    margin-bottom: 18px;
+}
+
+button{
+    background:#AA3939;
+    color:white;
+    border:none;
+    padding:.6rem 1.2rem;
+    border-radius:4px;
+    cursor:pointer;
+}
+button:hover{ background:#550000; }
+footer{
+    width: 100%;
+    background-color: #D46A6A;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- Logo -->
+    <img src="logo/restaurante_rachels_64px_X_64px.png" alt="Logo del Restaurante Rachel's" class="logo">
+
+    <!-- Título página -->
+    <h1>RESTAURANTE RACHEL'S</h1>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<section>
+    <h2>¡Cuéntanos lo que necesitas!</h2>
+    <p>¿Tienes alguna pregunta sobre el menú, requerimientos especiales, reservas o eventos privados, o simplemente quieres compartir tus sugerencias? Rellena este formulario con lo que necesites y nuestro equipo se pondrá en contacto contigo a la brevedad para asegurarnos de que tu experiencia sea perfecta.</p>
+</section>  
+
+<div class="form-wrapper">
+    <h2>Formulario de consultas</h2>
+    <form action="#" method="POST" novalidate>
+        <label for="nombre">Nombre *</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+
+        <label for="email">Correo electrónico *</label>
+        <input type="email" id="email" name="email" required placeholder="ejemplo@dominio.com">
+
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="telefono" placeholder="Ej. +34 600 123 456">
+
+        <label for="tipo-consulta">Tipo de consulta *</label>
+        <select id="tipo-consulta" name="tipo-consulta" required>
+            <option value="">Selecciona una opción</option>
+            <option value="reservas">Reservas</option>
+            <option value="eventos">Eventos privados</option>
+            <option value="menu">Menú y alergias</option>
+            <option value="general">Consulta general</option>
+        </select>
+
+        <label for="consulta">Tu consulta *</label>
+        <textarea id="consulta" name="consulta" rows="5" required placeholder="Escribe tu consulta aquí..."></textarea>
+
+        <button type="submit">Enviar consulta</button>
+    </form>
+</div>
+
+
+    <footer>
+        <p>&copy; 2025 Restaurante Rachel's. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
