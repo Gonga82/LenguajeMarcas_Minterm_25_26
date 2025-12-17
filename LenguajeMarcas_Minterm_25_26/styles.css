@@ -1,0 +1,96 @@
+body{
+    border: 0px 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #ffaaaa;
+}
+header{
+    position: relative;
+    width: 100%;
+    background-color: #AA3939;
+    padding: 5px 0;
+    margin: 0px;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+
+    font-size: 35px;
+
+}
+nav ul li{
+    display: inline;
+    margin: 15px;
+}
+nav a:hover,
+nav a:focus{    
+    color: #ffaaaa;
+}
+
+div{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+img{
+    width: 100%;
+    height: auto;
+
+}
+
+.logo{
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+
+section{
+    text-align: center;
+    margin: 8px 16px;
+}
+h2{
+    font-size: 30px;
+}
+p{
+    font-size: 25px;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;        
+}
+
+/* Estilo para listas sin viñetas */
+.sin-bullet{
+    list-style-type: disc;         
+    list-style-position: inside;    
+    margin-right: 50px;
+    margin-left: 50px;       
+    font-size: 25px;
+}
+
+footer{
+    width: 100%;
+    background-color: #D46A6A;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+}
+footer p{
+    font-size: 15px;
+}
+div{
+    text-align: center;
+}
+
+.portada-nosotros{
+    width: 25%;
+    height: auto;
+    margin-top: 20px;
+}
+.nosotros{
+    display: flex;
+}
