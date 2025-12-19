@@ -8,12 +8,12 @@
     <!-- Favicon -->
     <link rel="icon" href="../Logo/restaurante_rachels_16px_X_16px.png" type="image/png">
 </head>
+
 <body>
     <header>
         <!-- Logo -->
         <img src="logo/restaurante_rachels_64px_X_64px.png" alt="Logo del Restaurante Rachel's" class="logo">
    
-
         <!-- Título página -->
         <h1>RESTAURANTE RACHEL'S</h1>
 
@@ -48,21 +48,17 @@
             </ul>
             <p>Todo preparado con pasión y frescura, pensado para que cada visita sea un momento memorable.</p>
             <p>“Empieza tu mañana en Rachel’s: donde cada bocadillo es una invitación a sonreír.”</p>
-            <table>
-                <tr>
-                    <td><img src="imagenes-web/Bocadillo_Hamburguesa-min.png" alt="Hamburguesa"></td>
-                    <td><img src="imagenes-web/Bocadillo_Masia-min.png" alt="Masia"></td>
-                    <td><img src="imagenes-web/Bocadillo_Pinchos-min.png" alt="Pinchos"></td>
-                    <td><img src="imagenes-web/Bocadillo_Rachels_2-min.png" alt="Rachels"></td>
-                </tr>
+           
+            <!--Mostrar y Ocultar imágenes de bocadillos del desauyno -->
+            <button id="mostrar-imagenes-1" class="btn-imagenes">Mostrar imágenes bocadillo</button>
+                <table id="tabla-imagenes-1" style="display:none;">
 
-                <tr>
-                    <td><img src="imagenes-web/Bocadillo_Serranito-min.png" alt="Serranito"></td>
-                    <td><img src="imagenes-web/Bocadillo_Vegetal_Atun-min.png" alt="Vegetal Atún"></td>
-                    <td><img src="imagenes-web/Bocadillo_Vegetal_Pollo-min.png" alt="Vegetal Pollo"></td>
-                    <td><img src="imagenes-web/Tortilla_Patatas-min.jpg" alt="Tortilla Patatas"></td>
-                </tr>
-            </table>
+                    <tr>
+                        <td><img src="imagenes-web/Bocadillo_Hamburguesa-min.jpg" alt="Hamburguesa"></td>
+                        <td><img src="imagenes-web/Bocadillo_Masia-min.jpg" alt="Masia"></td>
+                    </tr>
+                </table>
+
         </section>
         <section>
             <h2>Al mediodia: Menús del día pensados para ti</h2>
@@ -70,21 +66,15 @@
             </p>
             <p>“En Rachel’s, la calidad llega a tu mesa en un abrir y cerrar de ojos.”</p>   
             
-            <table>
-                <tr>
-                    <td><img src="imagenes-web/Codillo-min.png" alt="Codillo"></td>
-                    <td><img src="imagenes-web/Butifarra_Judias-min.jpg" alt="Butifarra con judias"></td>
-                    <td><img src="imagenes-web/Ensalada_Tomate_Queso-min.png" alt="Ensalada de tomate y queso"></td>
-                    <td><img src="imagenes-web/Garbanzos_Salteados_2-min.jpg" alt="Garbanzos salteados"></td>
-                </tr>
+            <!--Mostrar y Ocultar imágenes del menú del día --> 
+            <button id="mostrar-imagenes-2" class="btn-imagenes">Mostrar imágenes de platos del menú del día</button>
+                <table id="tabla-imagenes-2" style="display:none;">
 
-                <tr>
-                    <td><img src="imagenes-web/Secreto_Iberico_2-min.jpg" alt="Secreto ibérico"></td>
-                    <td><img src="imagenes-web/Fideua-min.jpg" alt="Fideua"></td>
-                    <td><img src="imagenes-web/Lentejas_Riojana_2-min.jpg" alt="Lentejas a la riojana"></td>
-                    <td><img src="imagenes-web/Sopa_Cebolla-min.jpg" alt="Sopa de cebolla"></td>
+                  <tr>
+                    <td><img src="imagenes-web/Codillo-min.jpg" alt="Codillo"></td>
+                    <td><img src="imagenes-web/Butifarra_Judias-min.jpg" alt="Butifarra con judias"></td>
                 </tr>
-            </table>
+                </table>            
             
         </section>
         <section>
@@ -98,6 +88,9 @@
     <footer>
         <p>&copy; 2025 Restaurante Rachel's. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Archivo externo para los scripts -->
+    <script src="scripts.js"></script>
 
 </body>
 </html>
